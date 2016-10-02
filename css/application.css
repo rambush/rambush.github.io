@@ -9,20 +9,26 @@
 
 html{
   height: 100%;
-  background: url('../images/tillmans_hut_type.png'),
-    linear-gradient(
-      #ff00d6, #80186f
-    );
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: 20%;
+  background-image: url('../images/tillmans_hut_type.png'),
+  linear-gradient(
+    #ff00d6, #80186f
+  );
+  background-attachment: fixed, fixed;
+  background-repeat: repeat, no-repeat;
+  background-size: 20%, 100%;
+  background-position: 0px, 0px;
 }
 
 body {
   min-height: 100%;
+}
+
+.content{
+  min-height: 100%;
   /*height: 5000px;*/
   width: 75%;
   margin: auto;
+  box-shadow: 3px 3px 15px 1px #020a0d;
 }
 
 ul {
@@ -89,7 +95,7 @@ nav{
 }
 
 .portrait-1{
-  background-image: url('../images/jack.png');
+  background-image: url('../images/jack_min.png');
   box-shadow:         -8px 8px 5px 10px #262623;
 }
 
@@ -98,7 +104,7 @@ nav{
 }
 
 .portrait-2{
-  background-image: url('../images/paul.png');
+  background-image: url('../images/paul_min.png');
   box-shadow:         0px 8px 5px 10px #262623;
 }
 .portrait-2:hover{
@@ -106,7 +112,7 @@ nav{
 }
 
 .portrait-3{
-  background-image: url('../images/henry.png');
+  background-image: url('../images/henry_min.png');
   box-shadow:         8px 8px 5px 10px #262623;
 }
 .portrait-3:hover{
@@ -181,6 +187,24 @@ nav{
   height: 400pxs;
   flex-basis: 50%;
   padding: 20px;
+  font-family: 'VT323', monospace;
+  font-size: 1em;
+  color: #f0ecf6;
+}
+
+.col-2 h3{
+  text-align: center;
+  border-bottom: 2px groove #7386a3;
+  padding-bottom: 15px;
+  color: #e6ddf3;
+}
+.dates li{
+  line-height: 50px;
+}
+
+.dates li:before{
+  content: "\274F";
+  padding-right: 10px;
 }
 
 /*------------FOOTER-------------*/
@@ -189,10 +213,34 @@ footer{
   width: 100%;
   height: 100%;
   margin-bottom: 25px;
+  background-color: #7386a3;
 }
 
 .info-contact{
   width:100%;
-  height: 200px;
+  height: 100%;
+  font-family: 'VT323', monospace;
+}
+
+.info-contact ul{
+  display: flex;
+  flex-wrap: nowrap;
+  font-family:
+}
+
+.info-contact li {
+  display: inline-block;
+}
+
+.info-contact a {
+  line-height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: blue;
+}
+
+.info-contact a:hover{
+  color: #b1f4fb;
+  text-shadow: 2px 2px #16627f;
   background-color: #7386a3;
 }
