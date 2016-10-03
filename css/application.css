@@ -84,11 +84,13 @@ nav{
   width: 250px;
 
   outline: 10px ridge #7386a3;
+  transition: 0s;
 }
 
 .portrait:hover{
   outline: 10px ridge #b1f4fb;
   cursor: help;
+  transition: 0s;
 }
 /*#ffeb3b*/
 .portrait-1, .portrait-2, .portrait-3{
@@ -98,6 +100,7 @@ nav{
 .portrait-1{
   background-image: url('../images/jack_min.png');
   box-shadow:         -8px 8px 5px 10px #262623;
+  transition: 0s;
 }
 
 .portrait-1:hover{
@@ -113,6 +116,7 @@ nav{
 .portrait-2{
   background-image: url('../images/paul_min.png');
   box-shadow:         0px 8px 5px 10px #262623;
+  transition: 0s;
 }
 .portrait-2:hover{
   box-shadow:         0px 8px 20px 8px #16627f;
@@ -127,6 +131,7 @@ nav{
 .portrait-3{
   background-image: url('../images/henry_min.png');
   box-shadow:         8px 8px 5px 10px #262623;
+  transition: 0s;
 }
 .portrait-3:hover{
   box-shadow:         8px 8px 20px 8px #16627f;
