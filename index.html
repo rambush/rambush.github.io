@@ -13,19 +13,23 @@
     <header>
       <nav class='info-contact'>
         <ul>
-          <li><a href="mailto:rambushband@gmail.com">rambushband@gmail.com</a></li>
           <li><a href="https://rambush.bandcamp.com/">bandcamp</a></li>
+          <li><a href="https://soundcloud.com/rambush">soundcloud</a></li>
           <li><a href="https://www.facebook.com/rambushband/">facebook</a></li>
+          <li><a href="mailto:rambushband@gmail.com">rambushband@gmail.com</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="main">
       <div class='jumbotron'>
+        <audio id="seinfeld" src="./audio/seinfeld.mp3"></audio>
+        <audio id="metal" src="./audio/metal_riff.mp3"></audio>
+        <audio id="hallelujah" src="./audio/hallelujah.mp3"></audio>
         <div class='portrait-container'>
-          <div class='portrait portrait-1'></div>
-          <div class='portrait portrait-2'></div>
-          <div class='portrait portrait-3'></div>
+          <button button onmousedown="document.getElementById('hallelujah').play()"  class='portrait portrait-1'></button>
+          <button button onmousedown="document.getElementById('seinfeld').play()" class='portrait portrait-2'></button>
+          <button button onmousedown="document.getElementById('metal').play()" class='portrait portrait-3'></button>
         </div>
         <div class='portrait-sub'>
           <div class='sub-text text-1'><p>Stringer</p></div>
@@ -39,12 +43,17 @@
           <div class='video'></div>
         </div>
         <div class='col col-1'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dignissim massa. Quisque vel metus sollicitudin, pharetra libero et, feugiat felis. Vestibulum lorem augue, dictum et fermentum sed, bibendum nec ex. Aliquam risus ligula, commodo sed feugiat eu, mattis eu nibh. Phasellus suscipit viverra aliquet. Nunc viverra ultricies lorem ac fringilla. Suspendisse potenti. Aenean gravida ipsum quis tincidunt dapibus. Vivamus placerat blandit cursus. Mauris vel tortor elementum, ullamcorper velit non, commodo quam. Cras dignissim orci mauris, sed feugiat nisl luctus id. Phasellus finibus metus nisl. Cras hendrerit ultricies tempor. Sed auctor nisi sit amet accumsan mattis. In in congue nulla. Integer mi orci, consequat at ipsum eu, pretium pretium metus.</p>
+          <h3>||OVERBITE CRYSTALIS||</h3>
+          <div class="text-container">
+            <p>One costly evening, Redemption Pete  sailed his way across a Sea of Tranquility, armed with only his trust and wrist rocket ratchet hatchet. Upon his arrival, he was met with not three, but one building. A letter on the door: </p>
+            <p><br>"Late for my flight to New Jersey."<br>- Tillman<br></p>
+            <p><br>Stranded man, a cooler between, a party to attend, and a brother to meet. Let's write that down. A rose in his seat, to greet Pete, reminded of his sister back home: <br><br>"Don't forget that blank CD."</p>
+          </div>
         </div>
         <div class='col col-2'>
           <h3>||VHS WAKE MONTH||<br>||RESIDENCY DATES @ Turn Turn Turn||</h3>
           <ul class = 'dates'>
-            <li>November 3rd - 2016  w/ Bobby Peru + Sweatpants</li>
+            <li>November 3rd - 2016 &nbsp;w/ Bobby Peru + Sweatpants</li>
             <li>November 10th - 2016 w/ Pat Kearns + Maia Dooney</li>
             <li>November 17th - 2016 w/ Sunbathe + Krista Michaela</li>
           </ul>
@@ -55,9 +64,10 @@
     <footer>
       <div class='info-contact'>
         <ul>
-          <li><a href="mailto:rambushband@gmail.com">rambushband@gmail.com</a></li>
           <li><a href="https://rambush.bandcamp.com/">bandcamp</a></li>
+          <li><a href="https://soundcloud.com/rambush">soundcloud</a></li>
           <li><a href="https://www.facebook.com/rambushband/">facebook</a></li>
+          <li><a href="mailto:rambushband@gmail.com">rambushband@gmail.com</a></li>
         </ul>
       </div>
     </footer>
