@@ -50,7 +50,7 @@ nav{
   background-color: #e6ddf3;
 }
 
-/*---------MAIN BODY------------------*/
+/*---------JUMBOTRON------------------*/
 
 .main{
   display: flex;
@@ -169,7 +169,7 @@ nav{
   margin-right: 25px
 }
 
-/*------------MAIN INFO--------------*/
+/*------------MAIN BODY--------------*/
 
 .info-main{
   display: flex;
@@ -192,27 +192,38 @@ nav{
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  animation: toggleOpacity 2s infinite;
+}
+
+.video-cell{
+  width: 800px;
+	max-width: 100%;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .video-container{
-  display: flex;
-  flex-basis: 100%;
-  height: 500px;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
-.video{
-  display: flex;
-  width: 80%;
-  height: 80%;
-  margin: auto;
+.video-container iframe{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.video iframe{
-  margin: auto;
-}
 .col{
   width: 50%;
-  height: 400px;
+  max-height: 400px;
+  height: 100%;
   flex-basis: 50%;
   padding: 20px;
   font-family: 'VT323', monospace;
@@ -239,25 +250,43 @@ nav{
   color: #0F1309;
 }
 
+.col-2{
+  display: flex;
+  flex-wrap: wrap;
+}
 .col-2 h3{
+  flex-basis: 100%;
   text-align: center;
   border-bottom: 2px groove #7386a3;
   padding-bottom: 15px;
   color: #e6ddf3;
-}
-.dates li{
-  line-height: 50px;
-  padding: 10px;
+
+  text-decoration: line-through;
 }
 
-.dates li:hover{
-  background-color: #FBE7DF;
-  color: #0F1309;
+.col-2 a{
+  flex-basis: 100%;
+  justify-content: center;
+  max-height: 100%;
+  height: 300px;
+  width: 100%;
+
+  margin: auto;
+  padding: 15px;
+
+  text-align: center;
+  font-size: 3em;
 }
 
-.dates li:before{
-  content: "\274F";
-  padding-right: 10px;
+.col-2 h2{
+  color: #ff00d6;
+}
+
+.col-2 h2:hover{
+  background-color: #ff00d6;
+  color: #FBE7DF;
+
+  animation: toggleOpacity 5s infinite;
 }
 
 /*------------FOOTER-------------*/
@@ -297,4 +326,48 @@ footer{
   color: #b1f4fb;
   text-shadow: 2px 2px #16627f;
   background-color: #7386a3;
+}
+
+/*------------ANIMATIONS-------------*/
+
+@keyframes toggleOpacity{
+  04% { opacity: 1; } /* Turn off */
+  04.001% { opacity: 0.9; }
+
+  /* Keep off state for a short period */
+
+  06.999% { opacity: 0.9; } /* Turn back on */
+  07% { opacity: 1; }
+
+  20% { opacity: 1; } /* Turn off */
+  20.001% { opacity: 0.9; }
+
+  /* Keep off state for a short period */
+
+  22.999% { opacity: 0.8; } /* Turn back on */
+  23% { opacity: 1; }
+
+  50% { opacity: 1; } /* Turn off */
+  50.001% { opacity: 0.8; }
+
+  /* Keep off state for a short period */
+
+  52.999% { opacity: 0.9; } /* Turn back on */
+  53% { opacity: 1; }
+
+  60% { opacity: 1; } /* Turn off */
+  60.001% { opacity: 0.8; }
+
+  /* Keep off state for a short period */
+
+  62.999% { opacity: 0.8; } /* Turn back on */
+  63% { opacity: 1; }
+
+  84% { opacity: 1; } /* Turn off */
+  84.001% { opacity: 0.9; }
+
+  /* Keep off state for a short period */
+
+  86.999% { opacity: 0.9; } /* Turn back on */
+  87% { opacity: 1; }
 }
